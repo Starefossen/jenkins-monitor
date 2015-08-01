@@ -1,0 +1,35 @@
+{
+  "name": "jenkins-monitor",
+  "version": "1.0.0",
+  "description": "Monitor Jenkins Status",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require test/support/env --reporter spec --bail --check-leaks test/ test/acceptance/",
+    "watch": "mocha -R progress -b --check-leaks -w test.js",
+    "start": "./node_modules/.bin/supervisor index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Starefossen/jenkins-monitor.git"
+  },
+  "keywords": [
+    "Jenkins",
+    "Monitor",
+    "Monit",
+    "Watch",
+    "Alert"
+  ],
+  "author": "Hans Kristian Flaatten <hans.kristian.flaatten@turistforeningen.no>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Starefossen/jenkins-monitor/issues"
+  },
+  "homepage": "https://github.com/Starefossen/jenkins-monitor#readme",
+  "dependencies": {
+    "jsonist": "^1.1.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.8.0",
+    "mocha": "^2.2.5"
+  }
+}
