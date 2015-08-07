@@ -4,9 +4,9 @@
   "description": "Monitor Jenkins Status",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require test/support/env --reporter spec --bail --check-leaks test/ test/acceptance/",
-    "watch": "mocha -R progress -b --check-leaks -w test.js",
-    "start": "./node_modules/.bin/supervisor index.js"
+    "test": "mocha -r test/support/env -R spec -b --check-leaks test/",
+    "watch": "mocha -r test/support/env -R progress -b --check-leaks -w test/",
+    "start": "supervisor index.js"
   },
   "repository": {
     "type": "git",
