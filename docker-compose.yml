@@ -2,6 +2,11 @@ dev:
     image: iojs:slim
     env_file: .env
     working_dir: /usr/src/app
+    links:
+        - redis
     volumes:
         - .:/usr/src/app
     command: npm run watch
+
+redis:
+    image: redis:2.8
