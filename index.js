@@ -1,6 +1,6 @@
 'use strict';
 
-const jenkins = require('./jenkins');
+const jenkins = require('./lib/jenkins');
 const jsonist = require('jsonist');
 
 jenkins.getOffline(function(err, offline) {
