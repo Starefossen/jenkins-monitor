@@ -6,6 +6,7 @@
   "scripts": {
     "test": "mocha -r test/support/env -R spec -b --check-leaks test/",
     "watch": "mocha -r test/support/env -R progress -b --check-leaks -w test/",
+    "hint": "jshint index.js lib/ test/",
     "start": "supervisor index.js"
   },
   "repository": {
