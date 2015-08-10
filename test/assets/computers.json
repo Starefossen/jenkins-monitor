@@ -1,0 +1,3704 @@
+{
+  "busyExecutors" : 0,
+  "computer" : [
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "master",
+      "executors" : [
+        {
+
+        },
+        {
+
+        },
+        {
+
+        },
+        {
+
+        },
+        {
+
+        },
+        {
+
+        },
+        {
+
+        },
+        {
+
+        },
+        {
+
+        },
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : false,
+      "launchSupported" : true,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 4318404608,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 16828325888,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769106671,
+          "average" : 0
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769106676,
+          "path" : "/tmp",
+          "size" : 115118469120
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769106678,
+          "path" : "/var/lib/jenkins",
+          "size" : 115118469120
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 0
+        }
+      },
+      "numExecutors" : 10,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-centos5-32-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 1694228480,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 3718660096,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (i386)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108392,
+          "average" : 2015
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108411,
+          "path" : "/tmp",
+          "size" : 51538272256
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108756,
+          "path" : "/home/iojs/build",
+          "size" : 51538272256
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 896
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-centos5-64-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 1813516288,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 4148178944,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108220,
+          "average" : 1538
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 51648671744
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108495,
+          "path" : "/home/iojs/build",
+          "size" : 51648671744
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 843
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-centos5-gcc41-32-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 1694228480,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 3718660096,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (i386)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108221,
+          "average" : 1553
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 51538272256
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108495,
+          "path" : "/home/iojs/build-gcc41",
+          "size" : 51538272256
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 846
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-centos5-gcc41-64-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 1813516288,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 4148178944,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108067,
+          "average" : 1507
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 51648671744
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108348,
+          "path" : "/home/iojs/build-gcc41",
+          "size" : 51648671744
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 776
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-centos5-release-32-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 1381904384,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 3718660096,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (i386)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108220,
+          "average" : 1538
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 55516966912
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108495,
+          "path" : "/home/iojs/build",
+          "size" : 55516966912
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 855
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-centos5-release-64-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 1423753216,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 4148178944,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108062,
+          "average" : 1487
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 55072722944
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/home/iojs/build",
+          "size" : 55072722944
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 777
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-centos6-64-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 445853696,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 4152168448,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108222,
+          "average" : 1915
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 47433322496
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108755,
+          "path" : "/home/iojs/build",
+          "size" : 47433322496
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 899
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-centos6-64-gcc44-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 445853696,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 4152168448,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108222,
+          "average" : 1916
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 47433322496
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108755,
+          "path" : "/home/iojs/build-gcc44",
+          "size" : 47433322496
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 898
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-centos7-64-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 461254656,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 4145545216,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108221,
+          "average" : 1552
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 53647900672
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108495,
+          "path" : "/home/iojs/build",
+          "size" : 53647900672
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 853
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-containers-debian+stable-1",
+      "executors" : [
+        {
+
+        },
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 14264705024,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 16828301312,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108067,
+          "average" : 1505
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 116496879616
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108348,
+          "path" : "/home/iojs/build/debian+stable",
+          "size" : 116496879616
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 824
+        }
+      },
+      "numExecutors" : 2,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-containers-debian+stable-2",
+      "executors" : [
+        {
+
+        },
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 13879914496,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 16828301312,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108221,
+          "average" : 1551
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 149582348288
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108495,
+          "path" : "/home/iojs/build/debian+stable",
+          "size" : 149582348288
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 899
+        }
+      },
+      "numExecutors" : 2,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-containers-debian+testing-1",
+      "executors" : [
+        {
+
+        },
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 14263992320,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 16828301312,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108221,
+          "average" : 1913
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 116496879616
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108495,
+          "path" : "/home/iojs/build/debian+testing",
+          "size" : 116496879616
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 897
+        }
+      },
+      "numExecutors" : 2,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-containers-debian+testing-2",
+      "executors" : [
+        {
+
+        },
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 13879898112,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 16828301312,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108221,
+          "average" : 1552
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 149582348288
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108495,
+          "path" : "/home/iojs/build/debian+testing",
+          "size" : 149582348288
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 894
+        }
+      },
+      "numExecutors" : 2,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-containers-ubuntu+lucid-1",
+      "executors" : [
+        {
+
+        },
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 14264344576,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 16828301312,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108391,
+          "average" : 2011
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108411,
+          "path" : "/tmp",
+          "size" : 116496879616
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108756,
+          "path" : "/home/iojs/build/ubuntu+lucid",
+          "size" : 116496879616
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 944
+        }
+      },
+      "numExecutors" : 2,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-containers-ubuntu+lucid-2",
+      "executors" : [
+        {
+
+        },
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 13879631872,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 16828301312,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769107434,
+          "average" : 954
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108346,
+          "path" : "/tmp",
+          "size" : 149582348288
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/home/iojs/build/ubuntu+lucid",
+          "size" : 149582348288
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 823
+        }
+      },
+      "numExecutors" : 2,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-containers-ubuntu+precise-1",
+      "executors" : [
+        {
+
+        },
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 14264705024,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 16828301312,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108392,
+          "average" : 2011
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108411,
+          "path" : "/tmp",
+          "size" : 116496879616
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108756,
+          "path" : "/home/iojs/build/ubuntu+precise",
+          "size" : 116496879616
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 940
+        }
+      },
+      "numExecutors" : 2,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-containers-ubuntu+precise-2",
+      "executors" : [
+        {
+
+        },
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 13879914496,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 16828301312,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769106688,
+          "average" : 15
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769106694,
+          "path" : "/tmp",
+          "size" : 149582348288
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : null,
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 0
+        }
+      },
+      "numExecutors" : 2,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-containers-ubuntu+trusty-1",
+      "executors" : [
+        {
+
+        },
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 14264344576,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 16828301312,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769107434,
+          "average" : 954
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108346,
+          "path" : "/tmp",
+          "size" : 116496879616
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/home/iojs/build/ubuntu+trusty",
+          "size" : 116496879616
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 820
+        }
+      },
+      "numExecutors" : 2,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-containers-ubuntu+trusty-2",
+      "executors" : [
+        {
+
+        },
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 13879898112,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 16828301312,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108062,
+          "average" : 1484
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 149582348288
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : null,
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 826
+        }
+      },
+      "numExecutors" : 2,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-fedora21-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 359141376,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 4145213440,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108221,
+          "average" : 1912
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 48119226368
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108755,
+          "path" : "/home/iojs/build",
+          "size" : 48119226368
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 904
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-fedora22-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 346124288,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 4144918528,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108220,
+          "average" : 1549
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 50973659136
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108495,
+          "path" : "/home/iojs/build",
+          "size" : 50973659136
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 855
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-freebsd-linter-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 89128960,
+          "availableSwapSpace" : 1063256064,
+          "totalPhysicalMemory" : -1,
+          "totalSwapSpace" : 1073741824
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "FreeBSD (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108222,
+          "average" : 1912
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 18311344128
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108755,
+          "path" : "/usr/home/iojs/build",
+          "size" : 18311344128
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 1015
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-freebsd-linter-2",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 60817408,
+          "availableSwapSpace" : 1064304640,
+          "totalPhysicalMemory" : -1,
+          "totalSwapSpace" : 1073741824
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "FreeBSD (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108067,
+          "average" : 1502
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 23337119744
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/usr/home/iojs/build",
+          "size" : 23337119744
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : -195
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-ubuntu1204-64-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 680992768,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 4145147904,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108062,
+          "average" : 1483
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 51173806080
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/home/iojs/build",
+          "size" : 51173806080
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : -212
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-ubuntu1404-32-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 673214464,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 4235063296,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (i386)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108222,
+          "average" : 1911
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 51448516608
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108755,
+          "path" : "/home/iojs/build",
+          "size" : 51448516608
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 895
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-ubuntu1404-64-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 477409280,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 4145446912,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108222,
+          "average" : 1912
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 47471505408
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108755,
+          "path" : "/home/iojs/build",
+          "size" : 47471505408
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 894
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-ubuntu1404-gyp-32-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 673214464,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 4235063296,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (i386)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108067,
+          "average" : 1501
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 51448516608
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108348,
+          "path" : "/home/iojs/build",
+          "size" : 51448516608
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 773
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-ubuntu1404-gyp-64-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 477474816,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 4145446912,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108222,
+          "average" : 1911
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 47471505408
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108755,
+          "path" : "/home/iojs/build",
+          "size" : 47471505408
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 904
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-ubuntu1410-64-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 726925312,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 4144955392,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108392,
+          "average" : 2013
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108411,
+          "path" : "/tmp",
+          "size" : 51238404096
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108756,
+          "path" : "/home/iojs/build",
+          "size" : 51238404096
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : -96
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-digitalocean-ubuntu1504-64-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 1333395456,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 4144476160,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108391,
+          "average" : 2007
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108411,
+          "path" : "/tmp",
+          "size" : 51428130816
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108755,
+          "path" : "/home/iojs/build",
+          "size" : 51428130816
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 905
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-ibm-ppcbe-fedora20-64-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 6346178560,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 8563195904,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (ppc64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108221,
+          "average" : 1547
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 4281532416
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108495,
+          "path" : "/home/iojs/build",
+          "size" : 75541864448
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 852
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-ibm-ppcle-ubuntu1404-64-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 5320015872,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 8562409472,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (ppc64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769107434,
+          "average" : 951
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 78653026304
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/home/iojs/build",
+          "size" : 78653026304
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 811
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-joyent-smartos14-32-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : -1,
+          "availableSwapSpace" : 14730178560,
+          "totalPhysicalMemory" : -1,
+          "totalSwapSpace" : 15032385536
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "SunOS (x86)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108391,
+          "average" : 2007
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108411,
+          "path" : "/var/tmp",
+          "size" : 312670241792
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108756,
+          "path" : "/home/iojs/build",
+          "size" : 312670241792
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 882
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-joyent-smartos14-64-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : -1,
+          "availableSwapSpace" : 14739402752,
+          "totalPhysicalMemory" : -1,
+          "totalSwapSpace" : 15032385536
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "SunOS (x86)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108220,
+          "average" : 1532
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/var/tmp",
+          "size" : 311502629376
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108495,
+          "path" : "/home/iojs/build",
+          "size" : 311502629376
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 834
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-linaro-armv8-ubuntu1404",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer-x.png",
+      "iconClassName" : "icon-computer-x",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : null,
+        "hudson.node_monitors.ArchitectureMonitor" : null,
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108392,
+          "average" : 5000
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : null,
+        "hudson.node_monitors.DiskSpaceMonitor" : null,
+        "hudson.node_monitors.ClockMonitor" : null
+      },
+      "numExecutors" : 1,
+      "offline" : true,
+      "offlineCause" : {
+
+      },
+      "offlineCauseReason" : "<span class=error style='display:inline-block'>Time out for last 5 try</span>",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-nodesource-armv7-ubuntu1401",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 309927936,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 2092302336,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (arm)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769106908,
+          "average" : 254
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769107054,
+          "path" : "/tmp",
+          "size" : 935395328
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108058,
+          "path" : "/home/iojs/build",
+          "size" : 37200154624
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 536
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-nodesource-armv7-ubuntu1401-release",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 309927936,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 2092302336,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (arm)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108221,
+          "average" : 1908
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 935395328
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108754,
+          "path" : "/home/iojs-release/build",
+          "size" : 37200154624
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 798
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-nodesource-raspbian-wheezy-pi1-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 51073024,
+          "availableSwapSpace" : 536866816,
+          "totalPhysicalMemory" : 456503296,
+          "totalSwapSpace" : 536866816
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (arm)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108221,
+          "average" : 1908
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 1672617984
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108495,
+          "path" : "/home/iojs/build",
+          "size" : 1672617984
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 598
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-nodesource-raspbian-wheezy-pi1-2",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 80867328,
+          "availableSwapSpace" : 536866816,
+          "totalPhysicalMemory" : 456503296,
+          "totalSwapSpace" : 536866816
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (arm)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108067,
+          "average" : 1499
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 2430103552
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/home/iojs/build",
+          "size" : 2430103552
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 521
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-nodesource-raspbian-wheezy-pi1p-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 57245696,
+          "availableSwapSpace" : 522973184,
+          "totalPhysicalMemory" : 456503296,
+          "totalSwapSpace" : 536866816
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (arm)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108062,
+          "average" : 1479
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 2991501312
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/home/iojs/build",
+          "size" : 101836652544
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 530
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-nodesource-raspbian-wheezy-pi1p-2",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 143392768,
+          "availableSwapSpace" : 509693952,
+          "totalPhysicalMemory" : 456503296,
+          "totalSwapSpace" : 536866816
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (arm)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769107434,
+          "average" : 948
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108346,
+          "path" : "/tmp",
+          "size" : 2299703296
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/home/iojs/build",
+          "size" : 101836652544
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 514
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-nodesource-raspbian-wheezy-pi1p-3",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer-x.png",
+      "iconClassName" : "icon-computer-x",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 14499840,
+          "availableSwapSpace" : 536866816,
+          "totalPhysicalMemory" : 456503296,
+          "totalSwapSpace" : 536866816
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (arm)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108391,
+          "average" : 2004
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108411,
+          "path" : "/tmp",
+          "size" : 2836975616
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108755,
+          "path" : "/home/iojs/build",
+          "size" : 101836652544
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 635
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : true,
+      "offlineCause" : {
+
+      },
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : true
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-nodesource-raspbian-wheezy-pi1p-4",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 54042624,
+          "availableSwapSpace" : 531779584,
+          "totalPhysicalMemory" : 456503296,
+          "totalSwapSpace" : 536866816
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (arm)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108220,
+          "average" : 1544
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 2871177216
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108495,
+          "path" : "/home/iojs/build",
+          "size" : 101836652544
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 588
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-nodesource-raspbian-wheezy-pi1p-5",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 254660608,
+          "availableSwapSpace" : 532447232,
+          "totalPhysicalMemory" : 456503296,
+          "totalSwapSpace" : 536866816
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (arm)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108392,
+          "average" : 2009
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108411,
+          "path" : "/tmp",
+          "size" : 2814394368
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108756,
+          "path" : "/home/iojs/build",
+          "size" : 101836652544
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 637
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-nodesource-raspbian-wheezy-pi2-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 121774080,
+          "availableSwapSpace" : 104697856,
+          "totalPhysicalMemory" : 972193792,
+          "totalSwapSpace" : 104853504
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (arm)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108222,
+          "average" : 1907
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 3203911680
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108755,
+          "path" : "/home/iojs/build",
+          "size" : 101836652544
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 772
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-nodesource-raspbian-wheezy-pi2-2",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 206241792,
+          "availableSwapSpace" : 104853504,
+          "totalPhysicalMemory" : 972193792,
+          "totalSwapSpace" : 104853504
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (arm)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108392,
+          "average" : 2009
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108411,
+          "path" : "/tmp",
+          "size" : 3212693504
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108756,
+          "path" : "/home/iojs/build",
+          "size" : 101836652544
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 773
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-nodesource-raspbian-wheezy-pi2-3",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 107388928,
+          "availableSwapSpace" : 104828928,
+          "totalPhysicalMemory" : 972193792,
+          "totalSwapSpace" : 104853504
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (arm)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108220,
+          "average" : 1528
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 3238162432
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108495,
+          "path" : "/home/iojs/build",
+          "size" : 101836652544
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 716
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-nodesource-raspbian-wheezy-pi2-4",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 199811072,
+          "availableSwapSpace" : 104132608,
+          "totalPhysicalMemory" : 972193792,
+          "totalSwapSpace" : 104853504
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (arm)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108067,
+          "average" : 1496
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 3230953472
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/home/iojs/build",
+          "size" : 101836652544
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 647
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-nodesource-raspbian-wheezy-pi2-5",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 115404800,
+          "availableSwapSpace" : 104804352,
+          "totalPhysicalMemory" : 972193792,
+          "totalSwapSpace" : 104853504
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (arm)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108222,
+          "average" : 1906
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 3328688128
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108755,
+          "path" : "/home/iojs/build",
+          "size" : 101836652544
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 767
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-online_net-armv7-wheezy-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 874987520,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 2118905856,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (arm)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108222,
+          "average" : 1906
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 3722629120
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108755,
+          "path" : "/home/iojs/build",
+          "size" : 3722629120
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 824
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-online_net-armv7-wheezy-2",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 772820992,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 2122129408,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (arm)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108392,
+          "average" : 2007
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108411,
+          "path" : "/tmp",
+          "size" : 42111221760
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108756,
+          "path" : "/home/iojs/build",
+          "size" : 42111221760
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 859
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-online_net-armv7-wheezy-release-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 546373632,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 2118905856,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (arm)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108221,
+          "average" : 1542
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 13992120320
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108495,
+          "path" : "/home/iojs/build",
+          "size" : 13992120320
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 765
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-rackspace-debian8-64-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 1335685120,
+          "availableSwapSpace" : 0,
+          "totalPhysicalMemory" : 7856451584,
+          "totalSwapSpace" : 0
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Linux (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108067,
+          "average" : 1495
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 41490853888
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108348,
+          "path" : "/home/iojs/build",
+          "size" : 41490853888
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 20038
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-rackspace-win2008r2-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 29846392832,
+          "availableSwapSpace" : 32230359040,
+          "totalPhysicalMemory" : 32207654912,
+          "totalSwapSpace" : 34353258496
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Windows Server 2008 R2 (x86)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108067,
+          "average" : 1495
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "C:\\Users\\Administrator\\AppData\\Local\\Temp",
+          "size" : 16112070656
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108348,
+          "path" : "C:\\",
+          "size" : 16112070656
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : -9567
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-rackspace-win2008r2-2",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 29447733248,
+          "availableSwapSpace" : 31700455424,
+          "totalPhysicalMemory" : 32207654912,
+          "totalSwapSpace" : 34353258496
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Windows Server 2008 R2 (x86)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769106738,
+          "average" : 90
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769106743,
+          "path" : "C:\\Users\\Administrator\\AppData\\Local\\Temp",
+          "size" : 14638780416
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769106787,
+          "path" : "C:\\",
+          "size" : 14638780416
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : -10271
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-rackspace-win2008r2-release-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 28797927424,
+          "availableSwapSpace" : 30770475008,
+          "totalPhysicalMemory" : 32207654912,
+          "totalSwapSpace" : 34353258496
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Windows Server 2008 R2 (x86)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769107434,
+          "average" : 945
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108346,
+          "path" : "C:\\Users\\Administrator\\AppData\\Local\\Temp",
+          "size" : 16443572224
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "C:\\",
+          "size" : 16443572224
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : -9207
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-rackspace-win2008r2-release-2",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 60130529280,
+          "availableSwapSpace" : 62336983040,
+          "totalPhysicalMemory" : 64419909632,
+          "totalSwapSpace" : 66565513216
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Windows Server 2008 R2 (x86)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108221,
+          "average" : 1903
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "C:\\Users\\Administrator\\AppData\\Local\\Temp",
+          "size" : 16174383104
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108755,
+          "path" : "C:\\",
+          "size" : 16174383104
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : -8831
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-rackspace-win2012r2-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 30458421248,
+          "availableSwapSpace" : 32648744960,
+          "totalPhysicalMemory" : 32207650816,
+          "totalSwapSpace" : 34355134464
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Windows Server 2012 R2 (x86)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108392,
+          "average" : 2006
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108411,
+          "path" : "C:\\Users\\Administrator\\AppData\\Local\\Temp\\1",
+          "size" : 20137914368
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108756,
+          "path" : "C:\\",
+          "size" : 20137914368
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 3020
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-rackspace-win2012r2-2",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 30429470720,
+          "availableSwapSpace" : 32650899456,
+          "totalPhysicalMemory" : 32207650816,
+          "totalSwapSpace" : 34355134464
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Windows Server 2012 R2 (x86)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108391,
+          "average" : 2000
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108411,
+          "path" : "C:\\Users\\Administrator\\AppData\\Local\\Temp\\1",
+          "size" : 18176241664
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108755,
+          "path" : "C:\\",
+          "size" : 18176241664
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : -191
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-rackspace-win2012r2-msvs2015-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 30279680000,
+          "availableSwapSpace" : 31871946752,
+          "totalPhysicalMemory" : 32207650816,
+          "totalSwapSpace" : 34355134464
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Windows Server 2012 R2 (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108221,
+          "average" : 1540
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "C:\\Users\\Administrator\\AppData\\Local\\Temp",
+          "size" : 13062574080
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108495,
+          "path" : "C:\\",
+          "size" : 13062574080
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 2223
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-voxer-freebsd101-32-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 13958643712,
+          "availableSwapSpace" : 4287627264,
+          "totalPhysicalMemory" : -1,
+          "totalSwapSpace" : 4294967296
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "FreeBSD (i386)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108222,
+          "average" : 1903
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 1898816782336
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108755,
+          "path" : "/usr/home/iojs/build",
+          "size" : 1898816782336
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 938
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-voxer-freebsd101-64-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : 13958643712,
+          "availableSwapSpace" : 4287627264,
+          "totalPhysicalMemory" : -1,
+          "totalSwapSpace" : 4294967296
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "FreeBSD (amd64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108221,
+          "average" : 1540
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/tmp",
+          "size" : 1898816782336
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108495,
+          "path" : "/usr/home/iojs/build",
+          "size" : 1898816782336
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 886
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-voxer-osx1010-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : -1,
+          "availableSwapSpace" : 1028653056,
+          "totalPhysicalMemory" : -1,
+          "totalSwapSpace" : 1074790400
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Mac OS X (x86_64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108222,
+          "average" : 1902
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/private/var/folders/1v/6w5m1s2d6z136sd2km36j_4m0000gp/T",
+          "size" : 9948565504
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108755,
+          "path" : "/Users/iojs/build",
+          "size" : 9948565504
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 833
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-voxer-osx1010-2",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : -1,
+          "availableSwapSpace" : 1055916032,
+          "totalPhysicalMemory" : -1,
+          "totalSwapSpace" : 1073741824
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Mac OS X (x86_64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108221,
+          "average" : 1539
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/private/var/folders/1v/6w5m1s2d6z136sd2km36j_4m0000gp/T",
+          "size" : 7256580096
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108495,
+          "path" : "/Users/iojs/build",
+          "size" : 7256580096
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 886
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-voxer-osx1010-release-pkg-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : -1,
+          "availableSwapSpace" : 1071644672,
+          "totalPhysicalMemory" : -1,
+          "totalSwapSpace" : 1073741824
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Mac OS X (x86_64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108067,
+          "average" : 1493
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/private/var/folders/1v/6w5m1s2d6z136sd2km36j_4m0000gp/T",
+          "size" : 7500058624
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108348,
+          "path" : "/Users/iojs/build",
+          "size" : 7500058624
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 820
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-voxer-osx1010-release-pkg-2",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer-x.png",
+      "iconClassName" : "icon-computer-x",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : null,
+        "hudson.node_monitors.ArchitectureMonitor" : null,
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108394,
+          "average" : 5000
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : null,
+        "hudson.node_monitors.DiskSpaceMonitor" : null,
+        "hudson.node_monitors.ClockMonitor" : null
+      },
+      "numExecutors" : 1,
+      "offline" : true,
+      "offlineCause" : {
+
+      },
+      "offlineCauseReason" : "<span class=error style='display:inline-block'>Time out for last 5 try</span>",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    },
+    {
+      "actions" : [
+
+      ],
+      "displayName" : "iojs-voxer-osx1010-release-tar-1",
+      "executors" : [
+        {
+
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : true,
+      "jnlpAgent" : true,
+      "launchSupported" : false,
+      "loadStatistics" : {
+
+      },
+      "manualLaunchAllowed" : true,
+      "monitorData" : {
+        "hudson.node_monitors.SwapSpaceMonitor" : {
+          "availablePhysicalMemory" : -1,
+          "availableSwapSpace" : 964689920,
+          "totalPhysicalMemory" : -1,
+          "totalSwapSpace" : 1073741824
+        },
+        "hudson.node_monitors.ArchitectureMonitor" : "Mac OS X (x86_64)",
+        "hudson.node_monitors.ResponseTimeMonitor" : {
+          "timestamp" : 1438769108067,
+          "average" : 1492
+        },
+        "hudson.node_monitors.TemporarySpaceMonitor" : {
+          "timestamp" : 1438769108347,
+          "path" : "/private/var/folders/1v/6w5m1s2d6z136sd2km36j_4m0000gp/T",
+          "size" : 10536902656
+        },
+        "hudson.node_monitors.DiskSpaceMonitor" : {
+          "timestamp" : 1438769108348,
+          "path" : "/Users/iojs/build",
+          "size" : 10536902656
+        },
+        "hudson.node_monitors.ClockMonitor" : {
+          "diff" : 816
+        }
+      },
+      "numExecutors" : 1,
+      "offline" : false,
+      "offlineCause" : null,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+
+      ],
+      "temporarilyOffline" : false
+    }
+  ],
+  "displayName" : "Nodes",
+  "totalExecutors" : 84
+}
