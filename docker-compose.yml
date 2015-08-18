@@ -1,6 +1,6 @@
 dev:
     image: iojs:slim
-    env_file: .env
+    env_file: .env.dev
     working_dir: /usr/src/app
     links:
         - redis
