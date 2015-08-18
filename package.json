@@ -28,7 +28,7 @@
   "homepage": "https://github.com/Starefossen/jenkins-monitor#readme",
   "dependencies": {
     "async": "^1.4.2",
-    "jsonist": "^1.1.0",
+    "jsonist": "^1.2.0",
     "redis": "^0.12.1"
   },
   "devDependencies": {
