@@ -1,9 +1,12 @@
 'use strict';
 
-const redis   = require('./lib/redis');
-const jenkins = require('./lib/jenkins');
-const gitter  = require('./lib/gitter');
 const schedule = require('node-schedule');
+
+const jenkins = require('./lib/jenkins');
+const redis   = require('./lib/redis');
+
+const gitter  = require('./lib/gitter');
+const sendgrid = require('./lib/sendgrid');
 
 const pkg = require('./package.json');
 console.log(`Staring ${pkg.name} v${pkg.version}`);
@@ -19,13 +22,22 @@ schedule.scheduleJob(process.env.CRON_INTERVAL, function() {
     console.log('Checking changed Jenkins nodes...');
     redis.jenkinsChanged(nodes, function(err, changed) {
       if (err) { throw err; }
+
       console.log(`${changed.length} node(s) changed.`);
 
-      console.log('Posting to Gitter...');
-      gitter.post(changed, function(err) {
-        if (err) { throw err; }
-        console.log('Gitter: Ok!');
-      });
+      if (changed.length > 0) {
+        console.log('Posting to Gitter...');
+        gitter.post(changed, function(err) {
+          if (err) { throw err; }
+          console.log('Gitter: Ok!');
+        });
+
+        console.log('Notifying via Sendgrid...');
+        sendgrid.notify(changed, function(err) {
+          if (err) { throw err; }
+          console.log('Sendgrid: Ok!');
+        });
+      }
     });
   });
 });
