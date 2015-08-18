@@ -11,8 +11,7 @@ describe('jenkins', function() {
 
       jenkins.getComputers(function(err, nodes) {
         assert.ifError(err);
-        console.log(nodes);
-        console.log(nodes.length);
+        assert.equal(nodes.length, 68);
         done();
       });
     });
@@ -24,7 +23,7 @@ describe('jenkins', function() {
 
       jenkins.getOffline(function(err, offline) {
         assert.ifError(err);
-        console.log(offline);
+        assert.equal(offline.length, 5);
         done();
       });
     });
