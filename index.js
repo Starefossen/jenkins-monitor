@@ -1,23 +1,31 @@
 'use strict';
 
+const redis   = require('./lib/redis');
 const jenkins = require('./lib/jenkins');
-const jsonist = require('jsonist');
+const gitter  = require('./lib/gitter');
+const schedule = require('node-schedule');
 
-jenkins.getOffline(function(err, offline) {
-  let data = {};
-  let opts = {};
-  const url = process.env.GITTER_WEBHOOK_URL;
+const pkg = require('./package.json');
+console.log(`Staring ${pkg.name} v${pkg.version}`);
 
-  offline.forEach(function(c) {
-    data = {
-      message: `Jenkins slave [${c.name}](${process.env.JENKINS_URL}/computer/${c.name}) is offline`,
-      level: 'error'
-    };
+schedule.scheduleJob(process.env.CRON_INTERVAL, function() {
+  console.log('Running Cron Job...');
 
-    jsonist.post(url, data, opts, function(err, data, resp) {
+  console.log('Fetching Jenkins nodes...');
+  jenkins.getComputers(function(err, nodes) {
+    if (err) { throw err; }
+    console.log(`Found ${nodes.length} Jenkins nodes.`);
+
+    console.log('Checking changed Jenkins nodes...');
+    redis.jenkinsChanged(nodes, function(err, changed) {
       if (err) { throw err; }
-      // { success: true }
-      console.log(data);
+      console.log(`${changed.length} node(s) changed.`);
+
+      console.log('Posting to Gitter...');
+      gitter.post(changed, function(err) {
+        if (err) { throw err; }
+        console.log('Gitter: Ok!');
+      });
     });
   });
 });
