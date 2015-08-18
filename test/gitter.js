@@ -25,7 +25,7 @@ afterEach(function() {
   jsonist.post = post;
 });
 
-describe.only('gitter', function() {
+describe('gitter', function() {
   it('posts nodes to gitter', function(done) {
     let i = 0;
     const level = ['error', 'success'];
