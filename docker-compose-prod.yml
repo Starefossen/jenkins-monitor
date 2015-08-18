@@ -1,0 +1,12 @@
+dev:
+    build: .
+    env_file: .env.prod
+    working_dir: /usr/src/app
+    links:
+        - redis
+    command: iojs index.js
+    environment:
+        - CRON_INTERVAL=* */5 * * * *
+
+redis:
+    image: redis
