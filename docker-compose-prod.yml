@@ -6,7 +6,7 @@ dev:
         - redis
     command: iojs index.js
     environment:
-        - CRON_INTERVAL=* */5 * * * *
+        - CRON_INTERVAL=0 0 */1 * * *
 
 redis:
     image: redis
