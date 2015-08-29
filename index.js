@@ -10,6 +10,7 @@ const sendgrid = require('./lib/sendgrid');
 
 const pkg = require('./package.json');
 console.log(new Date(), `Staring ${pkg.name} v${pkg.version}`);
+console.log(new Date(), process.env.SENDGRID_RECIPIENTS.split(','));
 
 schedule.scheduleJob(process.env.CRON_INTERVAL, function() {
   console.log(new Date(), 'Running Cron Job...');
