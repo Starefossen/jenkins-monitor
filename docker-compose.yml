@@ -6,7 +6,7 @@ dev:
         - redis
     volumes:
         - .:/usr/src/app
-    command: npm run watch
+    command: npm start
     environment:
         - CRON_INTERVAL=*/15 * * * * *
 

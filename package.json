@@ -31,7 +31,8 @@
     "jsonist": "^1.2.0",
     "node-schedule": "^0.2.9",
     "redis": "^0.12.1",
-    "sendgrid": "^1.9.2"
+    "sendgrid": "^1.9.2",
+    "supervisor": "^0.7.1"
   },
   "devDependencies": {
     "jshint": "^2.8.0",

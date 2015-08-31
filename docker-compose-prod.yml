@@ -4,7 +4,6 @@ dev:
     working_dir: /usr/src/app
     links:
         - redis
-    command: iojs index.js
     environment:
         - CRON_INTERVAL=0 0 */1 * * *
 
