@@ -1,5 +1,12 @@
-.env
+.env.dev
+.env.prod
 .git/
 .gitignore
-node_modules/
+.jshintrc
+LICENSE
+README.md
+deploy.sh
+docker-compose-prod.yml
 docker-compose.yml
+node_modules/
+test/
