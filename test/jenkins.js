@@ -10,7 +10,7 @@ const _get = jsonist.get;
 beforeEach(function() {
   jsonist.get = function(url, cb) {
     return cb(null, JSON.parse(JSON.stringify(require('./assets/computers.json'))));
-  }
+  };
 });
 
 after(function() {

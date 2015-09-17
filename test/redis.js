@@ -12,7 +12,7 @@ let nodes;
 before(function() {
   jsonist.get = function(url, cb) {
     return cb(null, JSON.parse(JSON.stringify(require('./assets/computers.json'))));
-  }
+  };
 });
 
 beforeEach(function(done) {
