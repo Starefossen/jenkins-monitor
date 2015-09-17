@@ -4,6 +4,19 @@
 const assert = require('assert');
 const jenkins = require('../lib/jenkins');
 
+const jsonist = require('jsonist');
+const _get = jsonist.get;
+
+beforeEach(function() {
+  jsonist.get = function(url, cb) {
+    return cb(null, JSON.parse(JSON.stringify(require('./assets/computers.json'))));
+  }
+});
+
+after(function() {
+  jsonist.get = _get;
+});
+
 describe('jenkins', function() {
   describe('getComputers()', function() {
     it('returns all nodes', function(done) {
@@ -23,7 +36,7 @@ describe('jenkins', function() {
 
       jenkins.getOffline(function(err, offline) {
         assert.ifError(err);
-        assert.equal(offline.length, 5);
+        assert.equal(offline.length, 3);
         done();
       });
     });
