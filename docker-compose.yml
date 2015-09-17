@@ -9,6 +9,7 @@ dev:
     command: npm start
     environment:
         - CRON_INTERVAL=*/15 * * * * *
+        - NODE_ENV=development
 
 redis:
     image: redis
