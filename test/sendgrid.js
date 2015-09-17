@@ -24,7 +24,7 @@ afterEach(function() {
   sendgrid.sendgrid.send = send;
 });
 
-describe.only('sendgrid', function() {
+describe('sendgrid', function() {
   describe('notify', function() {
     it('sends an email', function(done) {
       sendgrid.sendgrid.send = function(email, cb) {
