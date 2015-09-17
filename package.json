@@ -4,7 +4,7 @@
   "description": "Monitor Jenkins Status",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -r test/support/env -R spec -b --check-leaks test/",
+    "test": "mocha -r test/support/env -R spec --check-leaks test/",
     "watch": "mocha -r test/support/env -R progress -b --check-leaks -w test/",
     "hint": "jshint index.js lib/ test/",
     "start": "supervisor index.js"
