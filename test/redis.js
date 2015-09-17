@@ -6,27 +6,35 @@ const redis = require('../lib/redis');
 
 const jsonist = require('jsonist');
 const jenkins = require('../lib/jenkins');
+const _get = jsonist.get;
 
 let nodes;
 
-before(function() {
-  jsonist.get = function(url, cb) {
-    return cb(null, JSON.parse(JSON.stringify(require('./assets/computers.json'))));
-  };
-});
-
-beforeEach(function(done) {
-  redis.flushdb(done);
-});
-
-beforeEach(function(done) {
-  jenkins.getComputers(function(err, computers) {
-    nodes = computers;
-    done(err);
-  });
-});
-
 describe('redis', function() {
+  before(function() {
+    jsonist.get = function(url, cb) {
+      const computers = require('./assets/computers.json');
+      return cb(null, JSON.parse(JSON.stringify(computers)));
+    };
+  });
+
+  after(function() {
+    jsonist.get = _get;
+  });
+
+  beforeEach(function(done) {
+    this.timeout(10000);
+    redis.flushdb(done);
+  });
+
+  beforeEach(function(done) {
+    this.timeout(10000);
+    jenkins.getComputers(function(err, computers) {
+      nodes = computers;
+      done(err);
+    });
+  });
+
   describe('module.exports', function() {
     it('returns a connection', function() {
       assert.equal(typeof redis.server_info, 'object');

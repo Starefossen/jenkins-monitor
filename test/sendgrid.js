@@ -7,24 +7,24 @@ const sendgrid = require('../lib/sendgrid');
 let nodes;
 let send = sendgrid.sendgrid.send;
 
-beforeEach(function() {
-  sendgrid.sendgrid.send = function() {};
-  nodes = [
-    {
-      name: 'foo',
-      offline: true,
-    },{
-      name: 'bar',
-      offline: false,
-    }
-  ];
-});
-
-afterEach(function() {
-  sendgrid.sendgrid.send = send;
-});
-
 describe('sendgrid', function() {
+  beforeEach(function() {
+    sendgrid.sendgrid.send = function() {};
+    nodes = [
+      {
+        name: 'foo',
+        offline: true,
+      },{
+        name: 'bar',
+        offline: false,
+      }
+    ];
+  });
+
+  afterEach(function() {
+    sendgrid.sendgrid.send = send;
+  });
+
   describe('notify', function() {
     it('sends an email', function(done) {
       sendgrid.sendgrid.send = function(email, cb) {
