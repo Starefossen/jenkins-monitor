@@ -9,6 +9,8 @@ let nodes;
 let post = jsonist.post;
 
 beforeEach(function() {
+  this.timeout(10000);
+
   jsonist.post = function() {};
   nodes = [
     {
