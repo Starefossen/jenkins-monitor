@@ -4,11 +4,26 @@
 const assert = require('assert');
 const redis = require('../lib/redis');
 
+const jsonist = require('jsonist');
+const jenkins = require('../lib/jenkins');
+
 let nodes;
+
+before(function() {
+  jsonist.get = function(url, cb) {
+    return cb(null, JSON.parse(JSON.stringify(require('./assets/computers.json'))));
+  }
+});
 
 beforeEach(function(done) {
   redis.flushdb(done);
-  nodes = JSON.parse(JSON.stringify(require('./assets/computers')));
+});
+
+beforeEach(function(done) {
+  jenkins.getComputers(function(err, computers) {
+    nodes = computers;
+    done(err);
+  });
 });
 
 describe('redis', function() {
@@ -20,21 +35,21 @@ describe('redis', function() {
 
   describe('jenkinsChanged()', function() {
     it('returns offline nodes', function(done) {
-      redis.jenkinsChanged(nodes.computer, function(err, n) {
+      redis.jenkinsChanged(nodes, function(err, n) {
         assert.ifError(err);
         assert.equal(n.length, 3);
-        assert.equal(n[0].displayName, 'iojs-linaro-armv8-ubuntu1404');
-        assert.equal(n[1].displayName, 'iojs-nodesource-raspbian-wheezy-pi1p-3');
-        assert.equal(n[2].displayName, 'iojs-voxer-osx1010-release-pkg-2');
+        assert.equal(n[0].name, 'iojs-linaro-armv8-ubuntu1404');
+        assert.equal(n[1].name, 'iojs-nodesource-raspbian-wheezy-pi1p-3');
+        assert.equal(n[2].name, 'iojs-voxer-osx1010-release-pkg-2');
         done();
       });
     });
 
     it('returns empty array for no changed nodes', function(done) {
-      redis.jenkinsChanged(nodes.computer, function(err, n) {
+      redis.jenkinsChanged(nodes, function(err, n) {
         assert.ifError(err);
         nodes = JSON.parse(JSON.stringify(require('./assets/computers')));
-        redis.jenkinsChanged(nodes.computer, function(err, n) {
+        redis.jenkinsChanged(nodes, function(err, n) {
           assert.ifError(err);
           assert.deepEqual(n, []);
           done();
@@ -43,18 +58,17 @@ describe('redis', function() {
     });
 
     it('returns only changed nodes', function(done) {
-      redis.jenkinsChanged(nodes.computer, function(err, n) {
+      redis.jenkinsChanged(nodes, function(err, n) {
         assert.ifError(err);
 
-        nodes = JSON.parse(JSON.stringify(require('./assets/computers')));
-        nodes.computer[5].temporarilyOffline = true;
-        nodes.computer[6].temporarilyOffline = true;
+        nodes[5].offline = 1;
+        nodes[6].offline = 1;
 
-        redis.jenkinsChanged(nodes.computer, function(err, n) {
+        redis.jenkinsChanged(nodes, function(err, n) {
           assert.ifError(err);
           assert.equal(n.length, 2);
-          assert.equal(n[0].displayName, 'iojs-digitalocean-centos5-release-32-1');
-          assert.equal(n[1].displayName, 'iojs-digitalocean-centos5-release-64-1');
+          assert.equal(n[0].name, 'iojs-digitalocean-centos5-release-32-1');
+          assert.equal(n[1].name, 'iojs-digitalocean-centos5-release-64-1');
           done();
         });
       });
