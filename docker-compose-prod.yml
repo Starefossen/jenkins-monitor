@@ -7,6 +7,8 @@ dev:
     environment:
         - CRON_INTERVAL=0 0 */1 * * *
         - NODE_ENV=production
+    restart: always
 
 redis:
     image: redis
+    restart: always
