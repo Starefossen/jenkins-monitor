@@ -25,7 +25,7 @@ describe('irc', function() {
     irc.client.say = say;
   });
 
-  describe('#post()', function() {
+  describe('#notify()', function() {
     it('posts nodes to irc', function(done) {
       let i = 0;
 
@@ -42,7 +42,7 @@ describe('irc', function() {
         }
       };
 
-      irc.post(nodes, function(err) {
+      irc.notify(nodes, function(err) {
         assert.ifError(err);
       });
     });

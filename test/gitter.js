@@ -26,7 +26,7 @@ describe('gitter', function() {
     jsonist.post = post;
   });
 
-  describe('#post()', function() {
+  describe('#notify()', function() {
     it('posts nodes to gitter', function(done) {
       let i = 0;
       const level = ['error', 'success'];
@@ -39,7 +39,7 @@ describe('gitter', function() {
         cb(null, { success: true }, {});
       };
 
-      gitter.post(nodes, done);
+      gitter.notify(nodes, done);
     });
 
     it('returns any errors', function(done) {
@@ -47,7 +47,7 @@ describe('gitter', function() {
         cb(new Error('I am borked'));
       };
 
-      gitter.post(nodes, function(err) {
+      gitter.notify(nodes, function(err) {
         assert(/I am borked/.test(err));
         done();
       });
