@@ -1,4 +1,4 @@
-/* jshint mocha: true */
+/* eslint func-names: 0 */
 'use strict';
 
 const assert = require('assert');

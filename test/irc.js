@@ -1,4 +1,4 @@
-/* jshint mocha: true */
+/* eslint func-names: 0 */
 'use strict';
 
 const assert = require('assert');
@@ -14,10 +14,10 @@ describe('irc', function() {
       {
         name: 'foo',
         offline: true,
-      },{
+      }, {
         name: 'bar',
         offline: false,
-      }
+      },
     ];
   });
 

@@ -1,11 +1,11 @@
-/* jshint mocha: true */
+/* eslint func-names: 0 */
 'use strict';
 
 const assert = require('assert');
 const sendgrid = require('../lib/sendgrid');
 
 let nodes;
-let send = sendgrid.sendgrid.send;
+const send = sendgrid.sendgrid.send;
 
 describe('sendgrid', function() {
   beforeEach(function() {
@@ -14,10 +14,10 @@ describe('sendgrid', function() {
       {
         name: 'foo',
         offline: true,
-      },{
+      }, {
         name: 'bar',
         offline: false,
-      }
+      },
     ];
   });
 

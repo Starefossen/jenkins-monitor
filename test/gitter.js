@@ -1,4 +1,4 @@
-/* jshint mocha: true */
+/* eslint func-names: 0 */
 'use strict';
 
 const assert = require('assert');
@@ -6,7 +6,7 @@ const gitter = require('../lib/gitter');
 const jsonist = require('jsonist');
 
 let nodes;
-let post = jsonist.post;
+const post = jsonist.post;
 
 describe('gitter', function() {
   beforeEach(function() {
@@ -15,10 +15,10 @@ describe('gitter', function() {
       {
         name: 'foo',
         offline: true,
-      },{
+      }, {
         name: 'bar',
         offline: false,
-      }
+      },
     ];
   });
 

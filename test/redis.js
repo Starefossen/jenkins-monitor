@@ -1,4 +1,4 @@
-/* jshint mocha: true */
+/* eslint func-names: 0 */
 'use strict';
 
 const assert = require('assert');
@@ -54,11 +54,11 @@ describe('redis', function() {
     });
 
     it('returns empty array for no changed nodes', function(done) {
-      redis.jenkinsChanged(nodes, function(err, n) {
-        assert.ifError(err);
+      redis.jenkinsChanged(nodes, function(redisErr1) {
+        assert.ifError(redisErr1);
         nodes = JSON.parse(JSON.stringify(require('./assets/computers')));
-        redis.jenkinsChanged(nodes, function(err, n) {
-          assert.ifError(err);
+        redis.jenkinsChanged(nodes, function(redisErr2, n) {
+          assert.ifError(redisErr2);
           assert.deepEqual(n, []);
           done();
         });
@@ -66,14 +66,14 @@ describe('redis', function() {
     });
 
     it('returns only changed nodes', function(done) {
-      redis.jenkinsChanged(nodes, function(err, n) {
-        assert.ifError(err);
+      redis.jenkinsChanged(nodes, function(redisErr1) {
+        assert.ifError(redisErr1);
 
         nodes[5].offline = 1;
         nodes[6].offline = 1;
 
-        redis.jenkinsChanged(nodes, function(err, n) {
-          assert.ifError(err);
+        redis.jenkinsChanged(nodes, function(redisErr2, n) {
+          assert.ifError(redisErr2);
           assert.equal(n.length, 2);
           assert.equal(n[0].name, 'iojs-digitalocean-centos5-release-32-1');
           assert.equal(n[1].name, 'iojs-digitalocean-centos5-release-64-1');
