@@ -34,7 +34,7 @@ server operated by [nodejs/build](https://github.com/nodejs/build).
 
 ```
 docker-compose run --rm dev npm test
-``
+```
 
 ## Start
 
