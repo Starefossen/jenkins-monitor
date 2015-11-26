@@ -1,6 +1,6 @@
 # Jenkins Monitor
 
-[![Build status](https://img.shields.io/wercker/ci/6b1943c59a2f5b55beac66aa0f90d346.svg "Build status")](https://app.wercker.com/project/bykey/6b1943c59a2f5b55beac66aa0f90d346)
+[![Build status](https://img.shields.io/wercker/ci/55fb0370ee52f86b6d055b05.svg "Build status")](https://app.wercker.com/project/bykey/6b1943c59a2f5b55beac66aa0f90d346)
 [![Dependency status](https://img.shields.io/david/Starefossen/jenkins-monitor.svg "Dependency status")](https://david-dm.org/Starefossen/jenkins-monitor)
 [![Join the chat](https://img.shields.io/badge/irc-join%20chat-blue.svg "Join the chat")](https://webchat.freenode.net/?channels=node-build)
 
