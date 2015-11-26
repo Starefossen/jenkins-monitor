@@ -6,9 +6,9 @@ dev:
         - redis
     environment:
         - CRON_INTERVAL=0 0 */1 * * *
-        - IRC_CHANNEL=#jenkins-monitor
+        - IRC_CHANNEL=#node-build
         - IRC_SERVER=chat.freenode.net
-        - IRC_USER=node-build
+        - IRC_USER=jenkins-monitor
         - JENKINS_URL=https://ci.nodejs.org
         - NODE_ENV=production
     restart: always
