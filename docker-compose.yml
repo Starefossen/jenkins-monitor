@@ -9,6 +9,9 @@ dev:
     command: npm start
     environment:
         - CRON_INTERVAL=*/15 * * * * *
+        - IRC_CHANNEL=#jenkins-monitor-dev
+        - IRC_SERVER=chat.freenode.net
+        - IRC_USER=jenkins-monitor-dev
         - JENKINS_URL=https://ci.nodejs.org
         - NODE_ENV=development
 

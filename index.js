@@ -7,6 +7,7 @@ const redis   = require('./lib/redis');
 
 const gitter = require('./lib/gitter');
 const sendgrid = require('./lib/sendgrid');
+const irc = require('./lib/irc');
 
 const pkg = require('./package.json');
 console.log(new Date(), `Staring ${pkg.name} v${pkg.version}`);
@@ -37,6 +38,12 @@ schedule.scheduleJob(process.env.CRON_INTERVAL, function() {
         sendgrid.notify(changed, function(err) {
           if (err) { throw err; }
           console.log(new Date(), 'Sendgrid: Ok!');
+        });
+
+        console.log(new Date(), 'Notifying via IRC...');
+        irc.post(changed, function(err) {
+          if (err) { throw err; }
+          console.log(new Date(), 'IRC: Ok!');
         });
       }
     });
