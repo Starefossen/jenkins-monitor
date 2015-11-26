@@ -9,6 +9,7 @@ dev:
     command: npm start
     environment:
         - CRON_INTERVAL=*/15 * * * * *
+        - JENKINS_URL=https://ci.nodejs.org
         - NODE_ENV=development
 
 redis:
