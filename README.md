@@ -3,6 +3,8 @@
 Jenkins Monitoring and Alert solution build to monitor the official Node.js CI
 server operated by [nodejs/build](https://github.com/nodejs/build).
 
+![Jenkins Monitor](assets/promo.png)
+
 ## Prerequisite
 
 * Docker >= v1.8
