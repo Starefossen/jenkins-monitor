@@ -5,7 +5,7 @@ const schedule = require('node-schedule');
 const jenkins = require('./lib/jenkins');
 const redis   = require('./lib/redis');
 
-const gitter  = require('./lib/gitter');
+const gitter = require('./lib/gitter');
 const sendgrid = require('./lib/sendgrid');
 
 const pkg = require('./package.json');
