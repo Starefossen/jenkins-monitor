@@ -30,7 +30,7 @@ schedule.scheduleJob(process.env.CRON_INTERVAL, function scheduleJobCb() {
 
       if (changed.length > 0) {
         console.log(new Date(), 'Posting to Gitter...');
-        gitter.post(changed, function gitterPostCb(err) {
+        gitter.notify(changed, function gitterPostCb(err) {
           if (err) { throw err; }
           console.log(new Date(), 'Gitter: Ok!');
         });
@@ -42,7 +42,7 @@ schedule.scheduleJob(process.env.CRON_INTERVAL, function scheduleJobCb() {
         });
 
         console.log(new Date(), 'Notifying via IRC...');
-        irc.post(changed, function ircPostCb(err) {
+        irc.notify(changed, function ircPostCb(err) {
           if (err) { throw err; }
           console.log(new Date(), 'IRC: Ok!');
         });
