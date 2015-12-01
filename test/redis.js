@@ -12,7 +12,7 @@ let nodes;
 
 describe('redis', function() {
   before(function() {
-    jsonist.get = function(url, cb) {
+    jsonist.get = function(url, opts, cb) {
       const computers = require('./assets/computers.json');
       return cb(null, JSON.parse(JSON.stringify(computers)));
     };
