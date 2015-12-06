@@ -4,12 +4,12 @@
 const assert = require('assert');
 const irc = require('../lib/irc');
 
-const say = irc.client.say;
+const notice = irc.client.notice;
 let nodes;
 
 describe('irc', function() {
   beforeEach(function() {
-    irc.client.say = function() {};
+    irc.client.notice = function() {};
     nodes = [
       {
         name: 'foo',
@@ -22,14 +22,14 @@ describe('irc', function() {
   });
 
   afterEach(function() {
-    irc.client.say = say;
+    irc.client.notice = notice;
   });
 
   describe('#notify()', function() {
     it('posts nodes to irc', function(done) {
       let i = 0;
 
-      irc.client.say = function(channel, message) {
+      irc.client.notice = function(channel, message) {
         i++;
 
         assert.equal(channel, process.env.IRC_CHANNEL);
