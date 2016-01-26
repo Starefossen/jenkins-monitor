@@ -14,6 +14,7 @@ const pkg = require('./package.json');
 console.log(new Date(), `Staring ${pkg.name} v${pkg.version}`);
 console.log(new Date(), process.env.SENDGRID_RECIPIENTS.split(','));
 
+console.log(new Date(), `Setting up cron interval "${process.env.CRON_INTERVAL}"`);
 schedule.scheduleJob(process.env.CRON_INTERVAL, () => {
   console.log(new Date(), 'Running Cron Job...');
 
