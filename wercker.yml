@@ -1,4 +1,4 @@
-box: node:slim
+box: node:argon
 
 services:
   - redis

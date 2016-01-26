@@ -1,5 +1,5 @@
 dev:
-    image: node:slim
+    image: node:argon
     env_file: .env.dev
     working_dir: /usr/src/app
     links:
