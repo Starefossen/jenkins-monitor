@@ -37,7 +37,7 @@ describe('redis', function () {
 
   describe('module.exports', function () {
     it('returns a connection', function () {
-      assert.equal(typeof redis.server_info, 'object');
+      assert.equal(typeof redis.serverInfo, 'object');
     });
   });
 
