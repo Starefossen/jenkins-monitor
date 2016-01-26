@@ -1,4 +1,4 @@
-/* eslint func-names: 0 */
+/* eslint func-names: 0, prefer-arrow-callback: 0 */
 'use strict';
 
 const assert = require('assert');
@@ -7,9 +7,9 @@ const sendgrid = require('../lib/sendgrid');
 let nodes;
 const send = sendgrid.sendgrid.send;
 
-describe('sendgrid', function() {
-  beforeEach(function() {
-    sendgrid.sendgrid.send = function() {};
+describe('sendgrid', function () {
+  beforeEach(function () {
+    sendgrid.sendgrid.send = function () {};
     nodes = [
       {
         name: 'foo',
@@ -21,13 +21,13 @@ describe('sendgrid', function() {
     ];
   });
 
-  afterEach(function() {
+  afterEach(function () {
     sendgrid.sendgrid.send = send;
   });
 
-  describe('notify', function() {
-    it('sends an email', function(done) {
-      sendgrid.sendgrid.send = function(email, cb) {
+  describe('notify', function () {
+    it('sends an email', function (done) {
+      sendgrid.sendgrid.send = function (email, cb) {
         assert.equal(email.from, process.env.SENDGRID_SENDER);
         assert.equal(email.subject, '[jenkins-monitor] Downtime Alert');
         assert.equal(typeof email.text, 'object');

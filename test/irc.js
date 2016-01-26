@@ -1,4 +1,4 @@
-/* eslint func-names: 0 */
+/* eslint func-names: 0, prefer-arrow-callback: 0 */
 'use strict';
 
 const assert = require('assert');
@@ -7,9 +7,9 @@ const irc = require('../lib/irc');
 const notice = irc.client.notice;
 let nodes;
 
-describe('irc', function() {
-  beforeEach(function() {
-    irc.client.notice = function() {};
+describe('irc', function () {
+  beforeEach(function () {
+    irc.client.notice = function () {};
     nodes = [
       {
         name: 'foo',
@@ -21,15 +21,15 @@ describe('irc', function() {
     ];
   });
 
-  afterEach(function() {
+  afterEach(function () {
     irc.client.notice = notice;
   });
 
-  describe('#notify()', function() {
-    it('posts nodes to irc', function(done) {
+  describe('#notify()', function () {
+    it('posts nodes to irc', function (done) {
       let i = 0;
 
-      irc.client.notice = function(channel, message) {
+      irc.client.notice = function (channel, message) {
         i++;
 
         assert.equal(channel, process.env.IRC_CHANNEL);
@@ -42,7 +42,7 @@ describe('irc', function() {
         }
       };
 
-      irc.notify(nodes, function(err) {
+      irc.notify(nodes, function (err) {
         assert.ifError(err);
       });
     });

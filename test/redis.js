@@ -1,4 +1,4 @@
-/* eslint func-names: 0 */
+/* eslint func-names: 0, prefer-arrow-callback: 0 */
 'use strict';
 
 const assert = require('assert');
@@ -10,40 +10,40 @@ const _get = jsonist.get;
 
 let nodes;
 
-describe('redis', function() {
-  before(function() {
-    jsonist.get = function(url, opts, cb) {
+describe('redis', function () {
+  before(function () {
+    jsonist.get = function (url, opts, cb) {
       const computers = require('./assets/computers.json');
       return cb(null, JSON.parse(JSON.stringify(computers)));
     };
   });
 
-  after(function() {
+  after(function () {
     jsonist.get = _get;
   });
 
-  beforeEach(function(done) {
+  beforeEach(function (done) {
     this.timeout(10000);
     redis.flushdb(done);
   });
 
-  beforeEach(function(done) {
+  beforeEach(function (done) {
     this.timeout(10000);
-    jenkins.getComputers(function(err, computers) {
+    jenkins.getComputers(function (err, computers) {
       nodes = computers;
       done(err);
     });
   });
 
-  describe('module.exports', function() {
-    it('returns a connection', function() {
+  describe('module.exports', function () {
+    it('returns a connection', function () {
       assert.equal(typeof redis.server_info, 'object');
     });
   });
 
-  describe('jenkinsChanged()', function() {
-    it('returns offline nodes', function(done) {
-      redis.jenkinsChanged(nodes, function(err, n) {
+  describe('jenkinsChanged()', function () {
+    it('returns offline nodes', function (done) {
+      redis.jenkinsChanged(nodes, function (err, n) {
         assert.ifError(err);
         assert.equal(n.length, 3);
         assert.equal(n[0].name, 'iojs-linaro-armv8-ubuntu1404');
@@ -53,11 +53,11 @@ describe('redis', function() {
       });
     });
 
-    it('returns empty array for no changed nodes', function(done) {
-      redis.jenkinsChanged(nodes, function(redisErr1) {
+    it('returns empty array for no changed nodes', function (done) {
+      redis.jenkinsChanged(nodes, function (redisErr1) {
         assert.ifError(redisErr1);
         nodes = JSON.parse(JSON.stringify(require('./assets/computers')));
-        redis.jenkinsChanged(nodes, function(redisErr2, n) {
+        redis.jenkinsChanged(nodes, function (redisErr2, n) {
           assert.ifError(redisErr2);
           assert.deepEqual(n, []);
           done();
@@ -65,14 +65,14 @@ describe('redis', function() {
       });
     });
 
-    it('returns only changed nodes', function(done) {
-      redis.jenkinsChanged(nodes, function(redisErr1) {
+    it('returns only changed nodes', function (done) {
+      redis.jenkinsChanged(nodes, function (redisErr1) {
         assert.ifError(redisErr1);
 
         nodes[5].offline = 1;
         nodes[6].offline = 1;
 
-        redis.jenkinsChanged(nodes, function(redisErr2, n) {
+        redis.jenkinsChanged(nodes, function (redisErr2, n) {
           assert.ifError(redisErr2);
           assert.equal(n.length, 2);
           assert.equal(n[0].name, 'iojs-digitalocean-centos5-release-32-1');
