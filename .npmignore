@@ -1,0 +1,8 @@
+.dockerignore
+.env.*
+*.log
+.git
+.gitignore
+Dockerfile
+docker-compose.yml
+wercker.yml
