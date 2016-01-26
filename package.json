@@ -35,7 +35,7 @@
     "sendgrid": "^2.0.0"
   },
   "devDependencies": {
-    "eslint": "^1.10.2",
+    "eslint": "^1.10.3",
     "eslint-config-airbnb": "^1.0.2",
     "mocha": "^2.3.4",
     "supervisor": "^0.9.1"
