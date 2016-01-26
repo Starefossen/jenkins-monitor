@@ -1,6 +1,6 @@
 {
   "name": "jenkins-monitor",
-  "version": "1.5.0",
+  "version": null,
   "description": "Monitor Jenkins Status",
   "main": "index.js",
   "scripts": {
