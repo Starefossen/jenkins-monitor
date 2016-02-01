@@ -21,12 +21,14 @@ schedule.scheduleJob(process.env.CRON_INTERVAL, () => {
   console.log(new Date(), 'Fetching Jenkins nodes...');
   jenkins.getComputers((jenkinsErr, nodes) => {
     if (jenkinsErr) { throw jenkinsErr; }
-    console.log(new Date(), `Found ${nodes.length} Jenkins nodes.`);
+
+    const offline = nodes.reduce((cnt, node) => cnt + (node.offline ? 1 : 0), 0);
+
+    console.log(new Date(), `Found ${nodes.length} Jenkins nodes, ${offline} are offline!`);
 
     console.log(new Date(), 'Checking changed Jenkins nodes...');
     redis.jenkinsChanged(nodes, (redisErr, changed) => {
       if (redisErr) { throw redisErr; }
-
       console.log(new Date(), `${changed.length} node(s) changed.`);
 
       if (changed.length > 0) {
