@@ -11,43 +11,43 @@ const sendgrid = require('./lib/sendgrid');
 const irc = require('./lib/irc');
 
 const pkg = require('./package.json');
-console.log(new Date(), `Staring ${pkg.name} v${pkg.version}`);
-console.log(new Date(), process.env.SENDGRID_RECIPIENTS.split(','));
+console.log(`Staring ${pkg.name} v${pkg.version}`);
+console.log(process.env.SENDGRID_RECIPIENTS.split(','));
 
-console.log(new Date(), `Setting up cron interval "${process.env.CRON_INTERVAL}"`);
+console.log(`Setting up cron interval "${process.env.CRON_INTERVAL}"`);
 schedule.scheduleJob(process.env.CRON_INTERVAL, () => {
-  console.log(new Date(), 'Running Cron Job...');
+  console.log('Running Cron Job...');
 
-  console.log(new Date(), 'Fetching Jenkins nodes...');
+  console.log('Fetching Jenkins nodes...');
   jenkins.getComputers((jenkinsErr, nodes) => {
     if (jenkinsErr) { throw jenkinsErr; }
 
     const offline = nodes.reduce((cnt, node) => cnt + (node.offline ? 1 : 0), 0);
 
-    console.log(new Date(), `Found ${nodes.length} Jenkins nodes, ${offline} are offline!`);
+    console.log(`Found ${nodes.length} Jenkins nodes, ${offline} are offline!`);
 
-    console.log(new Date(), 'Checking changed Jenkins nodes...');
+    console.log('Checking changed Jenkins nodes...');
     redis.jenkinsChanged(nodes, (redisErr, changed) => {
       if (redisErr) { throw redisErr; }
-      console.log(new Date(), `${changed.length} node(s) changed.`);
+      console.log(`${changed.length} node(s) changed.`);
 
       if (changed.length > 0) {
-        console.log(new Date(), 'Posting to Gitter...');
+        console.log('Posting to Gitter...');
         gitter.notify(changed, (err) => {
           if (err) { throw err; }
-          console.log(new Date(), 'Gitter: Ok!');
+          console.log('Gitter: Ok!');
         });
 
-        console.log(new Date(), 'Notifying via Sendgrid...');
+        console.log('Notifying via Sendgrid...');
         sendgrid.notify(changed, (err) => {
           if (err) { throw err; }
-          console.log(new Date(), 'Sendgrid: Ok!');
+          console.log('Sendgrid: Ok!');
         });
 
-        console.log(new Date(), 'Notifying via IRC...');
+        console.log('Notifying via IRC...');
         irc.notify(changed, (err) => {
           if (err) { throw err; }
-          console.log(new Date(), 'IRC: Ok!');
+          console.log('IRC: Ok!');
         });
       }
     });
