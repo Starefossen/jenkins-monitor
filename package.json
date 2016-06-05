@@ -4,11 +4,11 @@
   "description": "Monitor Jenkins Status",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -r test/support/env -b -c --check-leaks -R tap test/",
-    "watch": "mocha -r test/support/env -b -c --check-leaks -R progress -w test/",
     "lint": "eslint index.js lib/ test/",
+    "semantic-release": "semantic-release",
     "start": "supervisor index.js",
-    "semantic-release": "semantic-release"
+    "test": "mocha -r test/support/env -b -c --check-leaks -R tap test/",
+    "watch": "mocha -r test/support/env -b -c --check-leaks -R progress -w test/"
   },
   "repository": {
     "type": "git",
