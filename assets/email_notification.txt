@@ -1,8 +1,4 @@
-Hi %to_name%,
-
-This is a notification sent by the %program_name%.
-
-The following Jenkins nodes have changed status since last time we checked:
+%jenkins_summary%
 
 %jenkins_nodes%
 
@@ -10,6 +6,9 @@ Please visit the following Jenkins URL for a complete overview over all nodes:
 
 %jenkins_url%
 
+This is an automatic notification sent by %program_name%. If you wish to stop receiving these emails please submit a PR to the %email_repo% repo on GitHub.
+
+
 Best regards,
 
-%from_name%
+%signature%

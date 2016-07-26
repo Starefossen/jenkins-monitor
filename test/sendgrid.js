@@ -28,7 +28,7 @@ describe('sendgrid', function () {
   describe('notify', function () {
     it('sends an email', function (done) {
       sendgrid.sendgrid.send = function (email, cb) {
-        assert.equal(email.from, process.env.SENDGRID_SENDER);
+        assert.equal(email.from, process.env.SENDGRID_FROM_EMAIL);
         assert.equal(email.subject, '[jenkins-monitor] Downtime Alert');
         assert.equal(typeof email.text, 'object');
 
