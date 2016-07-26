@@ -11,6 +11,7 @@ const sendgrid = require('./lib/sendgrid');
 const irc = require('./lib/irc');
 
 const pkg = require('./package.json');
+
 console.log(`Staring ${pkg.name} v${pkg.version}`);
 console.log(process.env.SENDGRID_RECIPIENTS.split(','));
 

@@ -5,18 +5,19 @@ const assert = require('assert');
 const jenkins = require('../lib/jenkins');
 
 const jsonist = require('jsonist');
-const _get = jsonist.get;
+
+const jsonistGetFn = jsonist.get;
 
 describe('jenkins', function () {
   beforeEach(function () {
     jsonist.get = function (url, opts, cb) {
-      const computers = require('./assets/computers.json');
+      const computers = require('./assets/computers.json'); // eslint-disable-line
       return cb(null, JSON.parse(JSON.stringify(computers)));
     };
   });
 
   after(function () {
-    jsonist.get = _get;
+    jsonist.get = jsonistGetFn;
   });
 
   describe('getComputers()', function () {
