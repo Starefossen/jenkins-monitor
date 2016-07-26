@@ -1,19 +1,25 @@
-dev:
+version: '2'
+
+services:
+  node:
     image: node:argon
     env_file: .env.dev
     working_dir: /usr/src/app
     links:
-        - redis
+      - redis
     volumes:
-        - .:/usr/src/app
+      - .:/usr/src/app
     command: npm start
     environment:
-        - CRON_INTERVAL=*/60 * * * * *
-        - IRC_CHANNEL=#jenkins-monitor-dev
-        - IRC_SERVER=chat.freenode.net
-        - IRC_USER=jenkins-monitor-dev
-        - JENKINS_URL=https://ci.nodejs.org
-        - NODE_ENV=development
+      - CRON_INTERVAL=*/60 * * * * *
+      - IRC_CHANNEL=#jenkins-monitor-dev
+      - IRC_SERVER=chat.freenode.net
+      - IRC_USER=jenkins-monitor-dev
+      - JENKINS_URL=https://ci.nodejs.org
+      - NODE_ENV=development
+      - NPM_CONFIG_LOGLEVEL=silent
+      - NPM_CONFIG_PROGRESS=false
+      - NPM_CONFIG_SPIN=false
 
-redis:
-    image: redis
+  redis:
+    image: redis:3
