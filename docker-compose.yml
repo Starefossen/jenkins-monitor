@@ -12,6 +12,7 @@ services:
     command: npm start
     environment:
       - CRON_INTERVAL=*/60 * * * * *
+      - OFFLINE_THRESH=1
       - IRC_CHANNEL=#jenkins-monitor-dev
       - IRC_SERVER=chat.freenode.net
       - IRC_USER=jenkins-monitor-dev
