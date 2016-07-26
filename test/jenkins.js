@@ -39,6 +39,12 @@ describe('jenkins', function () {
       jenkins.getOffline(function (err, offline) {
         assert.ifError(err);
         assert.equal(offline.length, 3);
+
+        offline.forEach(node => {
+          assert.equal(node.offline, true);
+          assert.equal(node.reason, 'Time out for last 5 try');
+        });
+
         done();
       });
     });
