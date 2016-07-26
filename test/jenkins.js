@@ -49,4 +49,43 @@ describe('jenkins', function () {
       });
     });
   });
+
+  describe('summary()', function () {
+    it('returns a summary of offline only nodes', function () {
+      const nodes = [{
+        offline: true,
+      }, {
+        offline: true,
+      }];
+
+      assert.equal(jenkins.summary(nodes), '2 Jenkins nodes are offline.');
+    });
+
+    it('returns a summary of online only nodes', function () {
+      const nodes = [{
+        offline: false,
+      }, {
+        offline: false,
+      }, {
+        offline: false,
+      }];
+
+      assert.equal(jenkins.summary(nodes), '3 Jenkins nodes are online.');
+    });
+
+    it('returns a summary of mixed nodes', function () {
+      const nodes = [{
+        offline: true,
+      }, {
+        offline: true,
+      }, {
+        offline: false,
+      }];
+
+      assert.equal(jenkins.summary(nodes), [
+        '2 Jenkins nodes are offline',
+        '1 node is online.',
+      ].join(', and '));
+    });
+  });
 });
