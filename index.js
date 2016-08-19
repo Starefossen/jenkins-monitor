@@ -18,39 +18,53 @@ console.log(process.env.SENDGRID_RECIPIENTS.split(','));
 console.log(`Setting up cron interval "${process.env.CRON_INTERVAL}"`);
 schedule.scheduleJob(process.env.CRON_INTERVAL, () => {
   console.log('Running Cron Job...');
-
   console.log('Fetching Jenkins nodes...');
-  jenkins.getComputers((jenkinsErr, nodes) => {
-    if (jenkinsErr) { throw jenkinsErr; }
 
-    const offline = nodes.reduce((cnt, node) => cnt + (node.offline ? 1 : 0), 0);
+  // Get the list of all nodes/slaves from Jenkins
+  jenkins.getNodes()
 
-    console.log(`Found ${nodes.length} Jenkins nodes, ${offline} are offline!`);
+  // Print nodes offline/online to console log
+  .then(nodes => {
+    const offline = jenkins.getOffline(nodes).length;
+    console.log(`${nodes.length} total Jenkins nodes`);
+    console.log(`${offline} offline Jenkins nodes`);
 
-    console.log('Checking changed Jenkins nodes...');
-    redis.jenkinsChanged(nodes, (redisErr, changed) => {
-      if (redisErr) { throw redisErr; }
-      console.log(`${changed.length} node(s) changed.`);
+    return nodes;
+  })
 
-      if (changed.length > 0) {
-        console.log('Posting to Gitter...');
-        gitter.notify(changed, (err) => {
-          if (err) { throw err; }
-          console.log('Gitter: Ok!');
-        });
+  // Mark nodes changed since last time we checked
+  .then(redis.checkNodes)
 
-        console.log('Notifying via Sendgrid...');
-        sendgrid.notify(changed, (err) => {
-          if (err) { throw err; }
-          console.log('Sendgrid: Ok!');
-        });
+  // Filter out nodes that have not changed
+  .then(redis.getChanged)
 
-        console.log('Notifying via IRC...');
-        irc.notify(changed, (err) => {
-          if (err) { throw err; }
-          console.log('IRC: Ok!');
-        });
-      }
-    });
+  // Print the number of changed nodes to console log
+  .then(nodes => {
+    console.log(`${nodes.length} node(s) changed.`);
+
+    return nodes;
+  })
+
+  // Notify if there are any changed nodes
+  .then(nodes => {
+    if (nodes.length > 0) {
+      // Notifiy changed nodes
+      Promise.all([
+        gitter.notify(nodes),
+        irc.notify(nodes),
+        sendgrid.notify(nodes),
+      ])
+
+      // Print the result from notifications
+      .then(res => {
+        console.log(res);
+      });
+    }
+  })
+
+  // Catch any errors and exit
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
   });
 });

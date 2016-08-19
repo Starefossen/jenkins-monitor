@@ -20,33 +20,26 @@ describe('jenkins', function () {
     jsonist.get = jsonistGetFn;
   });
 
-  describe('getComputers()', function () {
-    it('returns all nodes', function (done) {
-      this.timeout(10000);
-
-      jenkins.getComputers(function (err, nodes) {
-        assert.ifError(err);
+  describe('getNodes()', () => {
+    it('returns all nodes', done => {
+      jenkins.getNodes().then(nodes => process.nextTick(() => {
         assert.equal(nodes.length, 68);
         done();
-      });
+      }));
     });
   });
 
-  describe('getOffline()', function () {
-    it('returns offline nodes', function (done) {
-      this.timeout(10000);
-
-      jenkins.getOffline(function (err, offline) {
-        assert.ifError(err);
-        assert.equal(offline.length, 3);
-
-        offline.forEach(node => {
-          assert.equal(node.offline, true);
-          assert.equal(node.reason, 'Time out for last 5 try');
-        });
-
-        done();
-      });
+  describe('getOffline()', () => {
+    it('filters out online nodes', done => {
+      jenkins.getNodes()
+        .then(jenkins.getOffline)
+        .then(nodes => process.nextTick(() => {
+          nodes.forEach(node => {
+            assert.equal(node.offline, true);
+            assert.equal(node.reason, 'Time out for last 5 try');
+          });
+          done();
+        }));
     });
   });
 

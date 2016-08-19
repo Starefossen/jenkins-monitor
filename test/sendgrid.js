@@ -35,7 +35,14 @@ describe('sendgrid', function () {
         cb(null);
       };
 
-      sendgrid.notify(nodes, done);
+      sendgrid.notify(nodes).then(res => process.nextTick(() => {
+        assert.deepEqual([
+          'Sendgid (foo@example.com): Ok!',
+          'Sendgid (bar@example.com): Ok!',
+        ], res);
+
+        done();
+      }));
     });
   });
 });

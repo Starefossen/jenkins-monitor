@@ -27,19 +27,38 @@ describe('redis', function () {
     });
   });
 
-  describe('jenkinsChanged()', function () {
-    it('returns empty array for no offline nodes', function (done) {
-      const nodes = [{ name: 'foo', offline: 0 }];
+  describe('checkNode()', () => {
+    [
+      { name: 'foo', offline: false, online: false },
+      { name: 'bar', offline: false, online: false },
+      { name: 'baz', offline: true, online: false },
+      { name: 'bix', offline: false, online: true },
+      { name: 'bez', offline: false, online: true },
+      { name: 'pax', offline: false, online: true },
+      { name: 'unknown', offline: false, online: false },
+    ].forEach(test => {
+      it(`sets ${test.name} changed=${test.offline} when offline`, done => {
+        const node = { name: test.name, offline: 1 };
 
-      redis.jenkinsChanged(nodes, function (err, n) {
-        assert.ifError(err);
-        assert.equal(n.length, 0);
-        assert.deepEqual(n, {});
-        done();
+        redis.checkNode(node).then(n => process.nextTick(() => {
+          assert.equal(n.changed, test.offline);
+          done();
+        }));
+      });
+
+      it(`sets ${test.name} changed=${test.online} when online`, done => {
+        const node = { name: test.name, offline: 0 };
+
+        redis.checkNode(node).then(n => process.nextTick(() => {
+          assert.equal(n.changed, test.online);
+          done();
+        }));
       });
     });
+  });
 
-    it('returns offline nodes after 3 consecutive times offline', function (done) {
+  describe('checkNodes()', () => {
+    it('returns changed status for multiple offline nodes', done => {
       const nodes = [
         { name: 'foo', offline: 1 },
         { name: 'bar', offline: 1 },
@@ -49,28 +68,21 @@ describe('redis', function () {
         { name: 'pax', offline: 1 },
       ];
 
-      redis.jenkinsChanged(nodes, function (err1, n1) {
-        assert.ifError(err1);
-        assert.equal(n1.length, 1);
-        assert.equal(n1[0].name, 'baz');
+      redis.checkNodes(nodes).then(n => process.nextTick(() => {
+        assert.deepEqual(n, [
+          { name: 'foo', offline: 1, changed: false },
+          { name: 'bar', offline: 1, changed: false },
+          { name: 'baz', offline: 1, changed: true },
+          { name: 'bix', offline: 1, changed: false },
+          { name: 'bez', offline: 1, changed: false },
+          { name: 'pax', offline: 1, changed: false },
+        ]);
 
-        redis.jenkinsChanged(nodes, function (err2, n2) {
-          assert.ifError(err2);
-          assert.equal(n2.length, 1);
-          assert.equal(n2[0].name, 'bar');
-
-          redis.jenkinsChanged(nodes, function (err3, n3) {
-            assert.ifError(err3);
-            assert.equal(n3.length, 1);
-            assert.equal(n3[0].name, 'foo');
-
-            done();
-          });
-        });
-      });
+        done();
+      }));
     });
 
-    it('returns online nodes after 3+ consecutive times offline', function (done) {
+    it('returns changed status for multiple online nodes', done => {
       const nodes = [
         { name: 'foo', offline: 0 },
         { name: 'bar', offline: 0 },
@@ -80,21 +92,37 @@ describe('redis', function () {
         { name: 'pax', offline: 0 },
       ];
 
-      redis.jenkinsChanged(nodes, function (err1, n1) {
-        assert.ifError(err1);
-        assert.equal(n1.length, 3);
-        assert.equal(n1[0].name, 'bix');
-        assert.equal(n1[1].name, 'bez');
-        assert.equal(n1[2].name, 'pax');
+      redis.checkNodes(nodes).then(n => process.nextTick(() => {
+        assert.deepEqual(n, [
+          { name: 'foo', offline: 0, changed: false },
+          { name: 'bar', offline: 0, changed: false },
+          { name: 'baz', offline: 0, changed: false },
+          { name: 'bix', offline: 0, changed: true },
+          { name: 'bez', offline: 0, changed: true },
+          { name: 'pax', offline: 0, changed: true },
+        ]);
 
-        redis.jenkinsChanged(nodes, function (err2, n2) {
-          assert.ifError(err2);
-          assert.equal(n2.length, 0);
-          assert.deepEqual(n2, {});
+        done();
+      }));
+    });
+  });
 
-          done();
-        });
-      });
+  describe('getChanged()', () => {
+    it('returns only changed nodes', () => {
+      const nodes = [
+        { name: 'foo', offline: 0, changed: false },
+        { name: 'bar', offline: 0, changed: false },
+        { name: 'baz', offline: 0, changed: false },
+        { name: 'bix', offline: 0, changed: true },
+        { name: 'bez', offline: 0, changed: true },
+        { name: 'pax', offline: 0, changed: true },
+      ];
+
+      assert.deepEqual(redis.getChanged(nodes), [
+        { name: 'bix', offline: 0, changed: true },
+        { name: 'bez', offline: 0, changed: true },
+        { name: 'pax', offline: 0, changed: true },
+      ]);
     });
   });
 });

@@ -39,7 +39,14 @@ describe('gitter', function () {
         cb(null, { success: true }, {});
       };
 
-      gitter.notify(nodes, done);
+      gitter.notify(nodes).then(res => process.nextTick(() => {
+        assert.deepEqual([
+          'Gitter (foo): Ok!',
+          'Gitter (bar): Ok!',
+        ], res);
+
+        done();
+      }));
     });
 
     it('returns any errors', function (done) {
@@ -47,10 +54,10 @@ describe('gitter', function () {
         cb(new Error('I am borked'));
       };
 
-      gitter.notify(nodes, function (err) {
+      gitter.notify(nodes).catch(err => process.nextTick(() => {
         assert(/I am borked/.test(err));
         done();
-      });
+      }));
     });
   });
 });

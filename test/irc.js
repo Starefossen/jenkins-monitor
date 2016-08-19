@@ -38,13 +38,17 @@ describe('irc', function () {
           assert.equal(message, 'Jenkins slave foo is offline');
         } else {
           assert.equal(message, 'Jenkins slave bar is online');
-          done();
         }
       };
 
-      irc.notify(nodes, function (err) {
-        assert.ifError(err);
-      });
+      irc.notify(nodes).then(res => process.nextTick(() => {
+        assert.deepEqual([
+          'IRC (foo): Ok!',
+          'IRC (bar): Ok!',
+        ], res);
+
+        done();
+      }));
     });
   });
 });
