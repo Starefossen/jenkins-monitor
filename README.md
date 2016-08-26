@@ -46,19 +46,14 @@ server operated by [nodejs/build](https://github.com/nodejs/build).
 ## Test
 
 ```
-docker-compose run --rm dev npm test
+npm test
+npm run lint
 ```
 
-## Start
+## Start (dev)
 
 ```
-docker-compose run --rm dev npm start
-```
-
-## Deploy
-
-```
-./deploy.sh
+npm start
 ```
 
 ## [MIT Licensed](https://github.com/Starefossen/jenkins-monitor/blob/master/LICENSE)
