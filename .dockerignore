@@ -1,12 +1,10 @@
-.env.dev
-.env.prod
+.env
+.env
 .git/
 .gitignore
 .jshintrc
 LICENSE
 README.md
-deploy.sh
-docker-compose-prod.yml
 docker-compose.yml
 node_modules/
 test/

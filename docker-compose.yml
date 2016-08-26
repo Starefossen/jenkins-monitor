@@ -3,7 +3,7 @@ version: '2'
 services:
   node:
     image: node:argon
-    env_file: .env.dev
+    env_file: .env
     working_dir: /usr/src/app
     links:
       - redis
