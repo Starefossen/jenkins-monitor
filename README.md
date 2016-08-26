@@ -18,7 +18,13 @@ server operated by [nodejs/build](https://github.com/nodejs/build).
 ## Environment
 
 * `CRON_INTERVAL` - how often to run checks (ex. `0 0 */1 * * *`)
+* `OFFLINE_THRESH` - how many times offline befor notifying
+
+**Jenkins:**
+
 * `JENKINS_URL` - Jenkins Server URL to monitor
+* `JENKINS_USER` - Jenkins user name
+* `JENKINS_AUTH` - Jenkins user auth token
 
 **IRC:**
 
